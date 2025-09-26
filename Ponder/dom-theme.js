@@ -21,4 +21,15 @@ function changeTheme() {
         pageContent.style.fontFamily = "Georgia, serif";
     }
 }
-          
+
+/* Pseudocode:
+START
+Show dropdown with Ocean, Forest, Desert
+WHEN user changes dropdown:
+    GET selected value
+    IF ocean → change background + font
+    IF forest → change background + font
+    IF desert → change background + font
+    ELSE → default background + font
+END
+*/
