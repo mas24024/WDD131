@@ -1,82 +1,84 @@
+/* Base styles */
 body {
   font-family: "Times New Roman", serif;
+  font-size: 20px;
   background-color: #fff;
   color: #000;
   margin: 0;
   padding: 40px;
+  line-height: 1.5;
 }
 
-.mission-container {
-  max-width: 600px;           
+/* Container */
+main {
+  max-width: 600px;
   margin: 0 auto;
-  padding: 100px;               
-  border: 1px solid #999;       
-  background-color: #fff;
+  padding: 20px;
 }
 
+/* Titles */
 .title {
   text-align: center;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   text-align: center;
-  font-size: 10px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 3px;
-  color: #004990; 
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  color: #006EB6;
+  margin-bottom: 20px;
 }
 
-.intro {
-  font-size: 16px;
-  line-height: 1.7;
+/* Paragraphs */
+p {
   margin-bottom: 18px;
+  text-align: left;
 }
 
-.emphasis {
-  font-size: 16px;
-  margin-bottom: 18px;
+/* Emphasis */
+em {
+  font-style: italic;
 }
 
-.mission-list {
-  font-size: 16px;
-  line-height: 1.7;
+/* List */
+ol {
   margin-left: 22px;
   margin-bottom: 40px;
 }
 
-.logo {
-  text-align: center;
-  margin-top: 50px;
+ol li {
+  margin-bottom: 15px;
 }
 
-.logo img {
-  max-width: 220px;  
+/* Footer logo */
+footer {
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 150px;
   height: auto;
 }
 
-.mission-list li {
-    margin-bottom: 15px;
+/* Theme switch dropdown */
+.theme-switch {
+  text-align: right;
+  margin-bottom: 20px;
 }
 
+/* Dark mode */
 .dark {
   background-color: #333;
-  color: white;
-}
-
-.dark .mission-container {
-  background-color: #333;
-  border-color: #665;
-  color: white;
+  color: #fff;
 }
 
 .dark .subtitle {
   color: #006EB6;
-  border-bottom-color: #665;
 }
