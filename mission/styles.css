@@ -9,12 +9,18 @@ body {
   line-height: 1.5;
 }
 
+
+
+
 /* Container */
 main {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
 }
+
+
+
 
 /* Titles */
 .title {
@@ -35,16 +41,25 @@ main {
   margin-bottom: 20px;
 }
 
+
+
+
 /* Paragraphs */
 p {
   margin-bottom: 18px;
   text-align: left;
 }
 
+
+
+
 /* Emphasis */
 em {
   font-style: italic;
 }
+
+
+
 
 /* List */
 ol {
@@ -56,6 +71,9 @@ ol li {
   margin-bottom: 15px;
 }
 
+
+
+
 /* Footer logo */
 footer {
   text-align: center;
@@ -66,6 +84,9 @@ footer img {
   width: 150px;
   height: auto;
 }
+
+
+
 
 /* Theme switch dropdown */
 .theme-switch {
