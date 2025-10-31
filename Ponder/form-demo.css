@@ -1,0 +1,89 @@
+/* form-demo.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  padding: 30px;
+  background: #f5f6f8;
+  color: #333;
+}
+
+/* Center main card */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form field styles */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.25s;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 119, 204, 0.3);
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.25s;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Error */
+.errors > p {
+  background: #ffe5e5;
+  border: 1px solid #ff6b6b;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  color: #b40000;
+  font-weight: 600;
+}
+
+/* Hide PayPal/Credit sections initially */
+.hide {
+  display: none;
+}
