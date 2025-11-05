@@ -108,5 +108,5 @@ input::placeholder {
 /* Move submit button closer to the cards */
 #card-btn {
   position: relative;
-  margin-top: 300px; /* reduces gap under cards */
+  margin-top: 250px; /* reduces gap under cards */
 }
