@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Card Form</title>
+  <link rel="stylesheet" href="creditcard.css" />
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body>
+  <main>
+    <div id="form-container">
+
+      <!-- FRONT -->
+      <div id="card-front">
+        <div id="image-container">
+          <span id="amount">PAYING: <strong>$99</strong></span>
+        </div>
+
+        <label for="card-number">CARD NUMBER</label>
+        <input type="text" id="card-number" placeholder="1234 5678 9101 1112" maxlength="19" required>
+
+        <label for="card-holder">CARD HOLDER</label>
+        <input type="text" id="card-holder" placeholder="e.g. John Doe" required>
+
+        <div id="exp-container">
+          <div>
+            <label>MM</label>
+            <input id="card-month" type="text" placeholder="MM" maxlength="2" required>
+          </div>
+          <div>
+            <label>YY</label>
+            <input id="card-year" type="text" placeholder="YY" maxlength="2" required>
+          </div>
+        </div>
+      </div>
+      <!-- END FRONT -->
+
+      <!-- BACK -->
+      <div id="card-back">
+        <div id="card-stripe"></div>
+
+        <label for="card-cvc">CVC/CVV</label>
+        <input id="card-cvc" type="text" placeholder="XXX" maxlength="4" required>
+        <p>Last 3 or 4 digits</p>
+      </div>
+      <!-- END BACK -->
+
+      <button type="submit" id="card-btn">Submit</button>
+
+    </div>
+  </main>
+</body>
+</html>
