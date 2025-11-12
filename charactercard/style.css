@@ -1,0 +1,181 @@
+/* Base */
+/* <!-- Code planned and structured with assistance from ChatGPT (GPT-5). -->
+ */
+ /* colors chosen by chat */
+:root{
+  --bg: #0f1220;
+  --card: #171a2b;
+  --ink: #e9ecf1;
+  --muted: #a9b1c6;
+  --acc: #ffd166;
+  --danger: #ef476f;
+  --ok: #06d6a0;
+  --ring: rgba(255, 209, 102, 0.35);
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+}
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(1200px 600px at 50% -10%, #1b2040 0%, var(--bg) 60%);
+  line-height: 1.5;
+  display: grid;
+  place-items: start center;
+  padding: 48px 20px;
+}
+
+/* Card (New Linear Gradient) */
+.card{
+  width: min(680px, 95vw);
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)) , var(--card); 
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#character-image{
+  width: 220px;
+  max-width: 60%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid rgba(255,255,255,0.12);
+  box-shadow: 0 10px 18px rgba(0,0,0,.35);
+  margin: 4px auto 16px;
+  display: block;
+}
+
+#character-name{
+  font-size: clamp(1.6rem, 2.2vw + 1rem, 2.4rem);
+  letter-spacing: .5px;
+}
+
+#character-class{
+  color: var(--muted);
+  margin-top: 4px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card p{
+  margin: 2px 0;
+  font-size: 1rem;
+}
+
+.card p span{
+  font-weight: 700;
+  color: var(--acc);
+}
+
+/* Buttons (cool designs added by chat, like hover colors) */
+.buttons{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 12px;
+  justify-items: center;
+}
+
+button{
+  appearance: none;
+  border: 1px solid rgba(255,255,255,0.14);
+  color: var(--ink);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover{
+  border-color: var(--acc);
+  box-shadow: 0 6px 16px var(--ring);
+}
+
+button:active{
+  transform: translateY(1px);
+}
+
+#attackBtn{
+  outline: 2px solid transparent;
+}
+
+#attackBtn:hover{
+  border-color: var(--danger);
+  box-shadow: 0 6px 16px rgba(239, 71, 111, .25);
+}
+
+#levelBtn:hover{
+  border-color: var(--ok);
+  box-shadow: 0 6px 16px rgba(6, 214, 160, .25);
+}
+
+/* Abilities */
+.abilities{
+  width: min(680px, 95vw);
+  margin-top: 32px;
+  position: relative;
+  z-index: 2S;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)) , var(--card);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+}
+
+.abilities h2{
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  padding-top: 4px; 
+  line-height: 1.25; 
+}
+
+.abilities ul{
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.abilities li{
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(255,255,255,0.12);
+}
+
+.abilities strong{
+  color: var(--acc);
+}
+
+/* Small screens*/
+@media (max-width: 420px){
+  .buttons{
+    grid-template-columns: 1fr;
+  }
+}
+
+.abilities li{
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(255,255,255,0.12);
+
+  /* text wrap  */
+  line-height: 1.4;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
