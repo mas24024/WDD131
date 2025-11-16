@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <meta name="description" content="Search and explore delicious recipes.">
+    <meta name="author" content="Tyler Massey">
+    <meta property="og:title" content="Recipe Book">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Find and explore delicious recipes.">
+    <meta property="og:image" content="images/apple-crisp.jpg">
+    <meta property="og:url" content="https://YOUR-URL-HERE">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+<header>
+    <img src="images/recipe-book.png" alt="Recipe Book Logo" class="logo">
+    <h1>RecipeBook</h1>
+</header>
+<main>
+    <!-- Search -->
+    <section class="search">
+        <label for="search">Find a Recipe</label>
+        <form>
+            <input id="search" type="search" placeholder="Find a recipe">
+            <button type="submit" aria-label="Search">
+                <img src="images/search.svg" alt="">
+            </button>
+        </form>
+    </section>
+    <!-- Recipe -->
+    <section class="recipe">
+        <img src="images/apple-crisp.jpg" alt="Apple Crisp" class="recipe-img">
+        <p class="tags">
+            <span>dessert</span>
+        </p>
+        <h2>Apple Crisp</h2>
+        <p 
+            class="rating"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars">
+            ⭐⭐⭐⭐☆
+        </p>
+        <p class="description">
+            Warm baked apples topped with a sweet, crunchy oat crumble.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+
+    <!--Icons -->
+    <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
+    <section class="social">
+        <a href="#"><img src="images/instagram_icon.svg" alt="Instagram"></a>
+        <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
+        <a href="#"><img src="images/pinterest_icon.svg" alt="Pinterest"></a>
+    </section>
+
+    <p class="attribution">
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a>
+    </p>
+
+    <p class="year">©2025</p>
+</footer>
+
+<!-- Js -->
+<script type="module" src="recipes.mjs"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

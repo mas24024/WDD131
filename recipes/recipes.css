@@ -1,0 +1,141 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 60px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: .5rem 0 0;
+}
+
+/* Search (WORK ON FIXING FIND RECIPE SECTION) */
+.search {
+    padding: 1rem;
+}
+
+.search label {
+    font-weight: bold;
+}
+
+.search form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: .5rem;
+    overflow: hidden;
+    align-items: center
+}
+
+.search input {
+    flex: 1;
+    padding: .6rem;
+    border: none;
+    font-size: 1rem;
+}
+
+.search button {
+    border: none;
+    background: none;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Card */
+.recipe {
+    width: 90%;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.tags span {
+    display: inline-block;
+    border: 1px solid #333;
+    padding: .2rem .5rem;
+    border-radius: 4px;
+    margin: .5rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: .5rem 0;
+}
+
+.rating {
+    font-size: 1.4rem;
+    margin: .3rem 0;
+}
+
+/* Hide description on mobile */
+.description {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.social img {
+    width: 40px;
+    margin: .3rem;
+}
+
+.attribution {
+    font-size: .6rem;
+    margin-top: .5rem;
+    display: block;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+
+    main {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .recipe {
+        max-width: 500px;
+    }
+
+    .description {
+        display: block;
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+        margin: auto;
+    }
+}
