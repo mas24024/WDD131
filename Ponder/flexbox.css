@@ -1,0 +1,74 @@
+/* Main */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-nav {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #333;
+}
+
+hr {
+  margin-top: 50px;
+}
+
+/* single media card */
+.media-card {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+.media-card-content {
+  padding: 0.5em;
+}
+
+/* Gallery layout */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.gallery .media-card {
+  flex: 1 1 calc(50% - 1em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 750px) {
+  .media-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .gallery .media-card {
+    flex: 1 1 100%;
+  }
+}
